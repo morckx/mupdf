@@ -54,6 +54,13 @@
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW"/>
 				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="image/jpeg"/>
+				<data android:mimeType="image/png"/>
+				<data android:mimeType="image/tiff"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
 				<category android:name="android.intent.category.BROWSABLE"/>
 				<data android:scheme="file"/>
 				<data android:mimeType="*/*"/>
@@ -67,6 +74,19 @@
 				<data android:scheme="file"/>
 				<data android:mimeType="*/*"/>
 				<data android:pathPattern=".*\\.pdf"/>
+				<data android:pathPattern=".*\\.PDF"/>
+				<data android:host="*"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="file"/>
+				<data android:mimeType="*/*"/>
+				<data android:pathPattern=".*\\.jpe?g"/>
+				<data android:pathPattern=".*\\.png"/>
+				<data android:pathPattern=".*\\.tiff?"/>
+				<data android:pathPattern=".*\\.TIFF?"/>
 				<data android:host="*"/>
 			</intent-filter>
 			<intent-filter>
